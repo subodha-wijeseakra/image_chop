@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🖼️ ImgChop
 
-## Getting Started
+> **Next-Gen Image Processing directly in your browser.**
+> Secure, client-side focused image compression and server-powered AI upscaling.
 
-First, run the development server:
+![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js)
+![React](https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0-38B2AC?style=for-the-badge&logo=tailwind-css)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript)
+
+## ✨ Features
+
+### 🚀 Smart Compression
+Optimize your images without sacrificing quality. 
+- **Variable Quality Control**: Fine-tune compression levels from 10% to 100%.
+- **Multiple Formats**: Convert between `JPG`, `PNG`, and `WebP` instantly.
+- **Smart Resizing**: Preset profiles for Full HD (1920px), 4K (3840px), and more.
+- **Real-time Stats**: See file size reduction immediately (e.g., "-75%").
+
+### ⚡ AI Upscaling
+Enhance low-resolution images with server-side processing.
+- **2x Resolution Boost**: Double the dimensions of your images.
+- **Lanczos3 Interpolation**: High-quality resampling ensuring crisp details.
+- **Secure Processing**: Images are processed in memory and never stored on disk.
+
+### 🎨 Modern Experience
+- **Dark/Light Mode**: Fully themed UI that respects system preferences.
+- **Drag & Drop**: Seamless file upload experience.
+- **Instant Preview**: Compare Original vs. Processed images side-by-side.
+- **Responsive Design**: Works perfectly on desktop and mobile.
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **Image Processing**: [Sharp](https://sharp.pixelplumbing.com/) (Node.js)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Font**: [Geist](https://vercel.com/font)
+
+## 🚀 Getting Started
+
+Running ImgChop locally is simple.
+
+### Prerequisites
+- Node.js 18+ 
+- npm / yarn / pnpm
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/subodha-wijeseakra/imgchop.git
+   cd imgchop
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000) to see the app running.
+
+## 📂 Project Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+imgchop/
+├── app/                  # Next.js App Router pages & API routes
+│   ├── api/              # Backend endpoints (compress/upscale)
+│   ├── globals.css       # Global styles & Tailwind
+│   └── page.tsx          # Main UI entry point
+├── components/           # Reusable UI components
+│   ├── compressor-view.tsx # Compression logic & UI
+│   ├── upscaler-view.tsx   # Upscaling logic & UI
+│   └── ui/               # Shared definition (buttons, inputs)
+├── lib/                  # Utilities (formatting, helpers)
+└── public/               # Static assets
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📜 License
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This project is open source and available under the [MIT License](LICENSE).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+<p align="center">
+  Built with ❤️ by Subodha Wijesekara
+</p>
